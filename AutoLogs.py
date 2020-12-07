@@ -11,8 +11,8 @@ def ModifiedDate():
 
 ModifiedDate()
 
-EMAIL_ADDRESS = 'testtesttesttest943@gmail.com'
-EMAIL_PASSWORD = 'testtest@123'
+EMAIL_ADDRESS = 'EmailID'
+EMAIL_PASSWORD = 'Password'
 
 server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
 server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
@@ -26,8 +26,8 @@ body = Part1 + Part2 + Part3
 
 msg = f'Subject: {subject}\n\n{body}'
 
-server.sendmail("testtesttesttest943@gmail.com",
-                "testtesttesttest943@gmail.com",
+server.sendmail("SenderEmailID",
+                "ReceiverEmailID",
                 msg)
 
 server.quit()
